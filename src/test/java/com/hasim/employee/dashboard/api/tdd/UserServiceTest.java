@@ -46,7 +46,7 @@ public class UserServiceTest {
 		users.add(user2);
 		userRepository.saveAll(users);
 		userRepository.flush();
-		assertEquals(userService.fetchUsers().size(), 2);
+		assertEquals(userService.fetchUsers().size(), 3);
 	}
 	
 	@Test

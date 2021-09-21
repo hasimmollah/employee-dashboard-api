@@ -81,7 +81,7 @@ retrieve:
     httpReadTimeout: 2000
     httpRequestCloseIdleConnectionsInSecond: 5
     httpRequestEndpoint: /user/{userId}
-    httpRequestHostContext: http://mock-server.com
+    httpRequestHostContext: ${EMAIL_HOST_CONTEXT_URL}
     
 resilience4j:
   circuitbreaker:

@@ -33,6 +33,6 @@ public class DashboardControllerTest {
         MockHttpServletResponse response = result.getResponse();
 
         assertEquals(200, response.getStatus());
-        assertEquals(response.getContentAsString(), "Health Board api is up");
+        assertEquals(response.getContentAsString(), "Employee dashboard api is up");
     }
 }

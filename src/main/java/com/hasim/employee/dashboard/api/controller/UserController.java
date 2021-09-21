@@ -45,6 +45,14 @@ public class UserController {
 		return users;
 		}, requestTaskExecutor);
 	}
+	
+	
+	@RequestMapping(value = "/health", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@ResponseStatus(OK)
+	@ResponseBody
+	public String health(){
+		return "Employee dashboard api is up";
+	}
 
 	@RequestMapping(value = "/users/user", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE, consumes=MediaType.APPLICATION_JSON_UTF8_VALUE)
 	@ResponseBody

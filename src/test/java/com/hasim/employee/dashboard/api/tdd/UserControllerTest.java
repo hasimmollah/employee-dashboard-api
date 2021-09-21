@@ -79,7 +79,7 @@ public class UserControllerTest {
 		Mockito.when(userService.createUser(Mockito.any(UserVO.class), Mockito.any())).thenReturn(user2);
 		 final HttpHeaders outboundRequestHeaders = new HttpHeaders();
 		 outboundRequestHeaders.set("Origin", "localhost");
-		 final MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.post("/user").headers(outboundRequestHeaders).contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON).content(objectMapper.writeValueAsString(userVO))).andExpect(request().asyncStarted()).andReturn();
+		 final MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.post("/users/user").headers(outboundRequestHeaders).contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON).content(objectMapper.writeValueAsString(userVO))).andExpect(request().asyncStarted()).andReturn();
 		mockMvc.perform(asyncDispatch(mvcResult)).andExpect(jsonPath("$.name", is(user2.getName())));
 		
 	}

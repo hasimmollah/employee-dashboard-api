@@ -65,23 +65,8 @@ server:
 # context Path
 server:
   servlet:
-    context-path: /genesis-api/v1.0
+    context-path: /employee-dashboard-api/v1.0
       
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: "${hystrixThreadTimeoutInMillis}"
-          strategy: SEMAPHORE
-      fallback:
-        enabled: "${fallbackEnabled}"
-      circuitBreaker:
-        enabled: "${circuitEnabled}"
-        sleepWindowInMilliseconds: "${sleepWindowInMilliseconds}"
-        requestVolumeThreshold: "${requestVolumeThreshold}"
-
 request:
   executor:
     threadpool:
@@ -89,13 +74,14 @@ request:
       maxSize: 50
       queueCapacity: 20
 retrieve: 
-  data:
+  email:
     httpConnectionMaxPerRoute: 50
     httpConnectionMaxSize: 50
     httpConnectionTimeout: 500
     httpReadTimeout: 2000
     httpRequestCloseIdleConnectionsInSecond: 5
-    httpRequestEndpoint: http://localhost:8686/user/{userId}
+    httpRequestEndpoint: /user/{userId}
+    httpRequestHostContext: http://localhost:8686
 
 resilience4j:
   circuitbreaker:
