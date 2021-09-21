@@ -1,4 +1,4 @@
-package com.hasim.genesis.api.exception;
+package com.hasim.employee.dashboard.api.exception;
 
 public class ApplicationNotFoundException extends RuntimeException {
     private static final long serialVersionUID = 1L;

@@ -1,5 +1,5 @@
 
-package com.hasim.genesis.api.model;
+package com.hasim.employee.dashboard.api.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

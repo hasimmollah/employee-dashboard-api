@@ -1,4 +1,4 @@
-package com.hasim.genesis.api.tdd;
+package com.hasim.employee.dashboard.api.tdd;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.hasSize;
@@ -27,8 +27,8 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.hasim.genesis.api.model.UserVO;
-import com.hasim.genesis.api.service.UserService;
+import com.hasim.employee.dashboard.api.model.UserVO;
+import com.hasim.employee.dashboard.api.service.UserService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

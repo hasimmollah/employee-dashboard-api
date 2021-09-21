@@ -1,9 +1,9 @@
-package com.hasim.genesis.api.config;
+package com.hasim.employee.dashboard.api.config;
 
-import static com.hasim.genesis.api.constant.CommonConstant.REQUEST_TASK_EXECUTOR;
-import static com.hasim.genesis.api.constant.CommonConstant.REST_TEMPLATE;
-import static com.hasim.genesis.api.constant.CommonConstant.SCHEME_HTTP;
-import static com.hasim.genesis.api.constant.CommonConstant.SCHEME_HTTPS;
+import static com.hasim.employee.dashboard.api.constant.CommonConstant.REQUEST_TASK_EXECUTOR;
+import static com.hasim.employee.dashboard.api.constant.CommonConstant.REST_TEMPLATE;
+import static com.hasim.employee.dashboard.api.constant.CommonConstant.SCHEME_HTTP;
+import static com.hasim.employee.dashboard.api.constant.CommonConstant.SCHEME_HTTPS;
 
 import java.util.concurrent.TimeUnit;
 
@@ -45,15 +45,15 @@ public class ApplicationResourcePoolConfiguration {
 	int requestTaskExecutorThreadPoolMaxSize;
 	@Value("${request.executor.threadpool.queueSize:20}")
 	int requestTaskExecutorThreadQueueCapacity;
-	@Value("${retrieve.data.httpConnectionMaxPerRoute:50}")
+	@Value("${retrieve.email.httpConnectionMaxPerRoute:50}")
 	int retrieveDataHttpConnectionMaxPerRoute;
-	@Value("${retrieve.data.httpConnectionMaxSize:50}")
+	@Value("${retrieve.email.httpConnectionMaxSize:50}")
 	int retrieveDataHttpConnectionMaxSize;
-	@Value("${retrieve.data.httpConnectionTimeout:500}")
+	@Value("${retrieve.email.httpConnectionTimeout:500}")
 	int retrieveDataHttpConnectionTimeout;
-	@Value("${retrieve.data.httpReadTimeout:2000}")
+	@Value("${retrieve.email.httpReadTimeout:2000}")
 	int retrieveDataHttpReadTimeout;
-	@Value("${retrieve.data.httpRequestCloseIdleConnectionsInSecond:5}")
+	@Value("${retrieve.email.httpRequestCloseIdleConnectionsInSecond:5}")
 	int httpRequestCloseIdleConnectionsInSecond;
 
 	/**

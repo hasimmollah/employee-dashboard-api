@@ -1,4 +1,4 @@
-package com.hasim.genesis.api.model;
+package com.hasim.employee.dashboard.api.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -9,6 +9,8 @@ public class UserVO {
 	long id;
 	@JsonProperty("userId")
 	String userId;
+	@JsonProperty("userEmail")
+	String userEmail;
 	public String getName() {
 		return name;
 	}
@@ -26,6 +28,12 @@ public class UserVO {
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+	public String getUserEmail() {
+		return userEmail;
+	}
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
 	}
 
 }

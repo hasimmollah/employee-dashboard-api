@@ -1,6 +1,6 @@
-package com.hasim.genesis.api.exception;
+package com.hasim.employee.dashboard.api.exception;
 
-import com.hasim.genesis.api.model.ErrorResponse;
+import com.hasim.employee.dashboard.api.model.ErrorResponse;
 
 public class MissingValueException extends RuntimeException {
     private static final long serialVersionUID = 1L;

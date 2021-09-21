@@ -1,5 +1,5 @@
 
-package com.hasim.genesis.api.constant;
+package com.hasim.employee.dashboard.api.constant;
 
 public class CommonConstant {
 	public static final String CACHE_APPLICATION = "application-cache";
@@ -19,7 +19,7 @@ public class CommonConstant {
 
 	public static final String DATA_PATH_INPUT = "data_path";
 
-	public static final String DATA_PATH_DEFAULT = "./genesis-data";
+	public static final String DATA_PATH_DEFAULT = "./employee-dashboard-data";
 
 	public static final String H2_DB_USER = "sa";
 
@@ -27,7 +27,7 @@ public class CommonConstant {
 
 	public static final String H2_DRIVER = "org.h2.Driver";
 
-	public static final String WEB_SOCKET_ENDPOINT = "/genesis-websocket";
+	public static final String WEB_SOCKET_ENDPOINT = "/employee-dashboard-websocket";
 
 	public static final String TOPIC_PATH = "/topic";
 

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Built-By: hasmolla
+Build-Jdk: 14.0.2
+Implementation-Title: employee-dashboard-api
+Implementation-Version: 1.0.0
+Implementation-Vendor-Id: com.hasim.employee.dashboard
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/employee-dashboard-api
+Created-By: Maven Integration for Eclipse
+artifactVersion: 1.0.0
+contextRoot: /employee-dashboard-api/v1.0
+repo: https://github.com/hasimmollah/genesis.git
+version: 1.0.0
+

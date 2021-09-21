@@ -1,12 +1,12 @@
 
-package com.hasim.genesis.api.model;
+package com.hasim.employee.dashboard.api.model;
 
 import javax.validation.Valid;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.annotation.JsonTypeName;
-import com.hasim.genesis.api.validator.Size;
+import com.hasim.employee.dashboard.api.validator.Size;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package com.hasim.genesis.api.controller;
+package com.hasim.employee.dashboard.api.controller;
 
 import static org.junit.Assert.assertEquals;
 

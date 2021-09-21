@@ -1,5 +1,5 @@
 
-package com.hasim.genesis.api.exception.handler;
+package com.hasim.employee.dashboard.api.exception.handler;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -14,13 +14,13 @@ import org.springframework.web.bind.ServletRequestBindingException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.hasim.genesis.api.exception.ApplicationDownstreamException;
-import com.hasim.genesis.api.exception.ApplicationNotFoundException;
-import com.hasim.genesis.api.exception.ApplicationSQLException;
-import com.hasim.genesis.api.exception.ErrorCodes;
-import com.hasim.genesis.api.exception.MaxValueLengthException;
-import com.hasim.genesis.api.exception.MissingValueException;
-import com.hasim.genesis.api.model.ErrorResponse;
+import com.hasim.employee.dashboard.api.exception.ApplicationDownstreamException;
+import com.hasim.employee.dashboard.api.exception.ApplicationNotFoundException;
+import com.hasim.employee.dashboard.api.exception.ApplicationSQLException;
+import com.hasim.employee.dashboard.api.exception.ErrorCodes;
+import com.hasim.employee.dashboard.api.exception.MaxValueLengthException;
+import com.hasim.employee.dashboard.api.exception.MissingValueException;
+import com.hasim.employee.dashboard.api.model.ErrorResponse;
 
 
 /**
@@ -30,7 +30,7 @@ import com.hasim.genesis.api.model.ErrorResponse;
  *
  */
 @Order(Ordered.HIGHEST_PRECEDENCE)
-@ControllerAdvice(basePackages = { " com.hasim.genesis.api.controller" })
+@ControllerAdvice(basePackages = { " com.hasim.employee.dashboard.api.controller" })
 public class ApplicationExceptionHandler {
 
     private static final Logger logger = LogManager.getLogger(ApplicationExceptionHandler.class);

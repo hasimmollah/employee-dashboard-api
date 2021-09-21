@@ -1,4 +1,4 @@
-package com.hasim.genesis.api.service;
+package com.hasim.employee.dashboard.api.service;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.hasim.genesis.api.data.UserEmailResponse;
-import com.hasim.genesis.api.model.UserVO;
+import com.hasim.employee.dashboard.api.data.UserEmailResponse;
+import com.hasim.employee.dashboard.api.model.UserVO;
 
 @Component
 public class UserFacade {

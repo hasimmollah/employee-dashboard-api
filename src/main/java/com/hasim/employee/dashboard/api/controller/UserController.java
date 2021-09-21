@@ -1,6 +1,6 @@
-package com.hasim.genesis.api.controller;
+package com.hasim.employee.dashboard.api.controller;
 
-import static com.hasim.genesis.api.constant.CommonConstant.REQUEST_TASK_EXECUTOR;
+import static com.hasim.employee.dashboard.api.constant.CommonConstant.REQUEST_TASK_EXECUTOR;
 import static org.springframework.http.HttpStatus.OK;
 
 import java.util.List;
@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import com.hasim.genesis.api.model.UserVO;
-import com.hasim.genesis.api.service.UserFacade;
+import com.hasim.employee.dashboard.api.model.UserVO;
+import com.hasim.employee.dashboard.api.service.UserFacade;
 
 @Controller
 public class UserController {
@@ -46,7 +46,7 @@ public class UserController {
 		}, requestTaskExecutor);
 	}
 
-	@RequestMapping(value = "/user", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE, consumes=MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@RequestMapping(value = "/users/user", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE, consumes=MediaType.APPLICATION_JSON_UTF8_VALUE)
 	@ResponseBody
 	public CompletableFuture<UserVO> createUser(@RequestBody UserVO userVO){
 		return CompletableFuture.supplyAsync(() -> {

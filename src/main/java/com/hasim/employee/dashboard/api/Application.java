@@ -1,5 +1,5 @@
 
-package com.hasim.genesis.api;
+package com.hasim.employee.dashboard.api;
 
 import java.util.Arrays;
 
@@ -22,12 +22,12 @@ import org.springframework.http.converter.json.MappingJackson2HttpMessageConvert
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.web.client.RestTemplate;
 
-import com.hasim.genesis.api.constant.CommonConstant;
+import com.hasim.employee.dashboard.api.constant.CommonConstant;
 
 @SpringBootApplication
 @EnableCircuitBreaker
 @EnableAsync
-@ComponentScan(basePackages = { "com.hasim.genesis.api.*" })
+@ComponentScan(basePackages = { "com.hasim.employee.dashboard.api.*" })
 public class Application extends SpringBootServletInitializer {
 	public static void main(String[] args) {
 		if (args.length > 0 && !args[0].contains(CommonConstant.SPRING_CONFIG_COMMAND ) ) {

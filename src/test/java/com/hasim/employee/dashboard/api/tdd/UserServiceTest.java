@@ -1,4 +1,4 @@
-package com.hasim.genesis.api.tdd;
+package com.hasim.employee.dashboard.api.tdd;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -15,10 +15,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.hasim.genesis.api.entity.User;
-import com.hasim.genesis.api.model.UserVO;
-import com.hasim.genesis.api.repository.UserRepository;
-import com.hasim.genesis.api.service.UserService;
+import com.hasim.employee.dashboard.api.entity.User;
+import com.hasim.employee.dashboard.api.model.UserVO;
+import com.hasim.employee.dashboard.api.repository.UserRepository;
+import com.hasim.employee.dashboard.api.service.UserService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

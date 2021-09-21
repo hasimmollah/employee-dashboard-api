@@ -1,9 +1,9 @@
-package com.hasim.genesis.api.service;
+package com.hasim.employee.dashboard.api.service;
 
-import static com.hasim.genesis.api.constant.CommonConstant.CIRCUIT_BREAKER_CRTEATE_USER;
-import static com.hasim.genesis.api.constant.CommonConstant.CIRCUIT_BREAKER_FETCH_USERS;
-import static com.hasim.genesis.api.constant.CommonConstant.FALLBACK_CRTEATE_USER;
-import static com.hasim.genesis.api.constant.CommonConstant.FALLBACK_FETCH_USERS;
+import static com.hasim.employee.dashboard.api.constant.CommonConstant.CIRCUIT_BREAKER_CRTEATE_USER;
+import static com.hasim.employee.dashboard.api.constant.CommonConstant.CIRCUIT_BREAKER_FETCH_USERS;
+import static com.hasim.employee.dashboard.api.constant.CommonConstant.FALLBACK_CRTEATE_USER;
+import static com.hasim.employee.dashboard.api.constant.CommonConstant.FALLBACK_FETCH_USERS;
 
 import java.util.List;
 import java.util.Optional;
@@ -15,10 +15,10 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.hasim.genesis.api.entity.User;
-import com.hasim.genesis.api.exception.ApplicationSQLException;
-import com.hasim.genesis.api.model.UserVO;
-import com.hasim.genesis.api.repository.UserRepository;
+import com.hasim.employee.dashboard.api.entity.User;
+import com.hasim.employee.dashboard.api.exception.ApplicationSQLException;
+import com.hasim.employee.dashboard.api.model.UserVO;
+import com.hasim.employee.dashboard.api.repository.UserRepository;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 
@@ -44,6 +44,7 @@ public class UserServiceImpl implements UserService {
 			userVO.setId(user.getId());
 			userVO.setName(user.getName());
 			userVO.setUserId(user.getUserId());
+			userVO.setUserEmail(user.getUserEmail());
 			return userVO;
 		}
 	};
@@ -56,6 +57,7 @@ public class UserServiceImpl implements UserService {
 			user.setId(userVO.getId());
 			user.setName(userVO.getName());
 			user.setUserId(userVO.getUserId());
+			user.setUserEmail(userVO.getUserEmail());
 			return user;
 		}
 	};

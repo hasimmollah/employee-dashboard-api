@@ -1,4 +1,4 @@
-package com.hasim.genesis.api.model;
+package com.hasim.employee.dashboard.api.model;
 
 import java.util.List;
 

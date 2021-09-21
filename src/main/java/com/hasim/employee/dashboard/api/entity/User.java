@@ -1,4 +1,4 @@
-package com.hasim.genesis.api.entity;
+package com.hasim.employee.dashboard.api.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

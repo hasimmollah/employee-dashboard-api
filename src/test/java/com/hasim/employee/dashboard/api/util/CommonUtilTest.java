@@ -1,4 +1,4 @@
-package com.hasim.genesis.api.util;
+package com.hasim.employee.dashboard.api.util;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.hasim.genesis.api.model.ErrorResponse;
-import com.hasim.genesis.api.util.CommonUtil;
+import com.hasim.employee.dashboard.api.model.ErrorResponse;
+import com.hasim.employee.dashboard.api.util.CommonUtil;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CommonUtilTest {

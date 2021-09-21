@@ -1,5 +1,5 @@
 
-package com.hasim.genesis.api.config;
+package com.hasim.employee.dashboard.api.config;
 
 import java.io.IOException;
 import java.util.Enumeration;
@@ -14,8 +14,8 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.hasim.genesis.api.exception.ErrorCodes;
-import com.hasim.genesis.api.util.CommonUtil;
+import com.hasim.employee.dashboard.api.exception.ErrorCodes;
+import com.hasim.employee.dashboard.api.util.CommonUtil;
 
 
 public class CSRFFilter extends OncePerRequestFilter {
