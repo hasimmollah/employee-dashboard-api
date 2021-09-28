@@ -57,9 +57,9 @@ public class Application extends SpringBootServletInitializer {
 		return new ModelMapper();
 	}
 
-	@Bean
-	@ConditionalOnExpression("#{!environment.getProperty('spring.profiles.active').equals('IntegrationTest')}")
-	@Primary
+	//@Bean
+	//@ConditionalOnExpression("#{!environment.getProperty('spring.profiles.active').equals('IntegrationTest')}")
+//	@Primary
 	public DataSource dataSource() {
 		StringBuilder url = new StringBuilder();
 		url.append(CommonConstant.H2_DB_URL_PART1);

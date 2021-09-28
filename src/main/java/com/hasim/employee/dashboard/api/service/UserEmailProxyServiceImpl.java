@@ -38,8 +38,10 @@ public class UserEmailProxyServiceImpl implements UserEmailProxyService {
 	public UserEmailResponse getUserEmailDetails(String userId) {
 		logger.info("getUserEmailDetails started");
 		UserEmailResponse userEmailResponse = null;
+		String url = new StringBuilder().append(hostContext).append(endpoint).toString();
+		logger.info("calling url::"+url);
 		final ResponseEntity<UserEmailResponse> response = restTemplate.exchange(
-				new StringBuilder().append(hostContext).append(endpoint).toString(), HttpMethod.GET,
+				url, HttpMethod.GET,
 				new HttpEntity(new MultiValueMap()), UserEmailResponse.class, userId);
 		if (HttpStatus.OK == response.getStatusCode()) {
 			userEmailResponse = response.getBody();

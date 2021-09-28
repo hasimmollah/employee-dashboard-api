@@ -13,16 +13,17 @@ spring:
       ddl-auto: update 
     properties:
       hibernate:
+        default_schema: ${POSTGRES_DB_SCHEMA}
         proc:
           param_null_passing : true
     show-sql: true
-#    database-platform: org.hibernate.dialect.PostgreSQL93Dialect
-    database-platform: org.hibernate.dialect.H2Dialect
-#  datasource:
-#    username: postgres
-#    password: scaboard
-#    driverClassName: org.postgresql.Driver
-#    url: jdbc:postgresql://localhost:5432/postgres
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+#    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    username: ${POSTGRES_DB_USER}
+    password: ${POSTGRES_DB_PASSWORD}
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://${POSTGRES_DB_HOST}:${POSTGRES_DB_PORT}/${POSTGRES_DB_NAME}
 #    username: sa
 #    password: 
 #    driverClassName: org.h2.Driver
@@ -30,7 +31,6 @@ spring:
   h2:
     console:
       enabled: true          
-
 
 ---
 
